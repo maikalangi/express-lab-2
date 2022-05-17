@@ -8,7 +8,7 @@ app.get('/', (req, res)=>{
 });
 
 app.get('/greeting/:name', (req, res)=>{
-        res.send('Hello, stranger.');
+        res.send(`Hello, ${req.params.name}`);
 });
 
 app.listen(port, ()=>{
